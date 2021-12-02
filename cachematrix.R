@@ -21,7 +21,9 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
-
+# cacheSolve can get the inverse of matrix by testing:
+# test<- makeCacheMatrix(matrix(rnorm(25),5,5))
+# cacheSolve(test)
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
     m <- x$getsolve()
@@ -35,5 +37,3 @@ cacheSolve <- function(x, ...) {
     m
 }
 
-test<- makeCacheMatrix(matrix(rnorm(25),5,5))
-cacheSolve(test)
